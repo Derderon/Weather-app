@@ -16,7 +16,7 @@ npm install --save path
 npm install --save express
 
 v package.json pridat:
-    "postinstall": "webpack -p",
+    "postinstall": "webpack -p --config webpack.prod.config.js --progress",
 
     "start": "node server.js",
 
