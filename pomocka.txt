@@ -9,3 +9,32 @@ nasledne je potrebne v scr/index.js zaradit tuto kniznicu (applyMiddleware(Redux
 
 npm install --save axios
 npm install --save react-sparklines@1.6.0 - pre vytvaranie grafov
+
+Pokial chceme uverejnit aplikaciu:
+
+npm install --save path
+npm install --save express
+
+v package.json pridat:
+    "postinstall": "webpack -p",
+
+    "start": "node server.js",
+
+a prepisat povodny "start": na "dev":
+
+okrem toho pridat subor server.js a vpisat don:
+
+const express = require('express');
+const path = require('path');
+const port = process.env.PORT || 8080;
+
+const app = express();
+
+app.use(express.static(__dirname));
+
+app.get('*', (req, res) => {
+  res.sendFile(path.resolve(__dirname, 'index.html'));
+});
+
+app.listen(port);
+console.log('Server started!!!');
