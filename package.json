@@ -35,8 +35,6 @@
     "babel-preset-react": "^6.1.18",
     "express": "^4.16.2",
     "lodash": "^3.10.1",
-    "jquery": "^2.2.1",
-    "jsdom": "^8.1.0",
     "path": "^0.12.7",
     "react": "^0.14.3",
     "react-dom": "^0.14.3",
