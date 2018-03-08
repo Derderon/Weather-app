@@ -1,0 +1,11 @@
+http://openweathermap.org/forecast5
+
+Mexter
+p.molnar123@gmail.com
+shae6Beiqu
+
+npm install --save redux-promise
+nasledne je potrebne v scr/index.js zaradit tuto kniznicu (applyMiddleware(ReduxPromise))
+
+npm install --save axios
+npm install --save react-sparklines@1.6.0 - pre vytvaranie grafov
